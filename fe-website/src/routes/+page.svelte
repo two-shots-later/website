@@ -1,2 +1,19 @@
-<h1>Two Shots Later</h1>
-<a href="/b1">first blog post</a>
+<div>
+    <section>
+        <img
+            src="logo_tsl.png"
+            alt="two shots later logo"
+            width="300"
+            height="300"
+        />
+    </section>
+</div>
+
+<style>
+    section {
+        height: 100;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
