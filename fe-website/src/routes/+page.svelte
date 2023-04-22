@@ -1,6 +1,6 @@
 <script>
     function handleClick() {
-        alert("no more alerts");
+        window.open("https://rustaway.itch.io/the-fantastical-cookbook");
     }
     function handleMouseEnter() {}
     function handleMouseOut() {}
@@ -24,8 +24,11 @@
         <a
             href="https://rustaway.itch.io/the-fantastical-cookbook"
             style="text-decoration:none"
-            class="text_child">The Fantastical Cookbook</a
+            class="text_child"
+            target="_blank"
         >
+            The Fantastical Cookbook
+        </a>
         <!-- <h2 class="text_child" cursor="pointer">The Fantastical Cookbook</h2> -->
         <p class="text_child">cook fantastical food for friends</p>
     </div>
