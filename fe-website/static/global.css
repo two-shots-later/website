@@ -3,5 +3,19 @@ body {
 }
 
 h1 {
-  font-family: "Jetbrains Mono", "Arial";
+  font-family: "Poppins", "Arial";
+}
+
+h2 {
+  font-family: "Poppins", "Arial";
+}
+
+p {
+  font-family: "Poppins", "Arial";
+}
+
+a {
+  font-family: "Poppins", "Arial";
+  font-size:x-large;
+  color: #F1342E;
 }
