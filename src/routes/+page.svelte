@@ -8,7 +8,7 @@
 
 <div class="parent">
     <img
-        src="logo_tsl.png"
+        src="branding/text_clear_tsl_gun.png"
         alt="two shots later logo"
         width="275"
         height="275"
@@ -16,7 +16,7 @@
     />
     <div class="parent child">
         <img
-            src="game_fantastical_cookbook.png"
+            src="fantastical_cookbook.GIF"
             alt="goblin standing behind bar with food to the left"
             class="child game_image"
             on:click={handleClick}
@@ -51,8 +51,8 @@
         margin: auto;
     }
     .game_image {
-        width: 250px;
-        height: 250px;
+        width: 400px;
+        height: 300px;
         border-radius: 4px;
         cursor: pointer;
     }
