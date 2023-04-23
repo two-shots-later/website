@@ -1,4 +1,8 @@
 <script>
+    export let data;
+
+    import Card from "../lib/Card.svelte";
+
     function handleClick() {
         window.open("https://rustaway.itch.io/the-fantastical-cookbook");
     }
@@ -32,6 +36,7 @@
         <!-- <h2 class="text_child" cursor="pointer">The Fantastical Cookbook</h2> -->
         <p class="text_child">Cook fantastical food for friends</p>
     </div>
+    <Card gameData="{data.games[0]}"></Card>
 </div>
 
 <style>
