@@ -30,7 +30,7 @@
             The Fantastical Cookbook
         </a>
         <!-- <h2 class="text_child" cursor="pointer">The Fantastical Cookbook</h2> -->
-        <p class="text_child">cook fantastical food for friends</p>
+        <p class="text_child">Cook fantastical food for friends</p>
     </div>
 </div>
 
