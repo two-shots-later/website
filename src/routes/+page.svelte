@@ -20,7 +20,7 @@
     />
     <div class="w-full flex flex-wrap justify-center gap-10 px-[5%]">
         {#each data.games as game, index}
-            <Card gameData="{game}" isNewest="{data.games.length == index + 1}"></Card>
+            <Card gameData="{game}" isNewest="{index == 0}"></Card>
         {/each}
     </div>
 </div>
