@@ -23,6 +23,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@tailwindcss/line-clamp": "^0.4.4",
 		"svelte-language-server": "^0.15.9",
 		"typescript-language-server": "^3.3.1"
 	}

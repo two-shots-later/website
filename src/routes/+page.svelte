@@ -18,25 +18,11 @@
         height="275"
         class="child"
     />
-    <div class="parent child">
-        <img
-            src="fantastical_cookbook.GIF"
-            alt="goblin standing behind bar with food to the left"
-            class="child game_image"
-            on:click={handleClick}
-        />
-        <a
-            href="https://rustaway.itch.io/the-fantastical-cookbook"
-            style="text-decoration:none"
-            class="text_child"
-            target="_blank"
-        >
-            The Fantastical Cookbook
-        </a>
-        <!-- <h2 class="text_child" cursor="pointer">The Fantastical Cookbook</h2> -->
-        <p class="text_child">Cook fantastical food for friends</p>
+    <div class="w-full flex flex-wrap justify-center gap-10 px-[5%]">
+        {#each data.games as game, index}
+            <Card gameData="{game}" isNewest="{data.games.length == index + 1}"></Card>
+        {/each}
     </div>
-    <Card gameData="{data.games[0]}"></Card>
 </div>
 
 <style>
