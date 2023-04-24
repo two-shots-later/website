@@ -34,16 +34,19 @@
 </script>
 
 <!-- logo and navigation bar, applied to every page -->
-<div class="flex place-content-center">
-	<img
-		src="branding/text_clear_tsl_gun.png"
-		alt="two shots later logo"
-		width="225"
-		height="225"
-		class="child"
-	/>
-</div>
-<div class="flex place-content-center mt-4">
+<a href="/games">
+	<div class="flex place-content-center">
+		<img
+			src="branding/text_clear_tsl_gun.png"
+			alt="two shots later logo"
+			width="225"
+			height="225"
+			class="child mt-6"
+		/>
+	</div>
+</a>
+
+<div class="flex place-content-center my-5">
 	<ul>
 		<li class="mr-6 inline">
 			<a href="/games" class="color: {navGamesColor} hover:text-orange-500">Games</a>

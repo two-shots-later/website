@@ -1,19 +1,14 @@
+<script>
+    import Card from '../../lib/Card.svelte';
+
+    export let data;
+</script>
+
 <div class="parent">
-    <div class="parent child">
-        <img
-            src="fantastical_cookbook.GIF"
-            alt="goblin standing behind bar with food to the left"
-            class="child game_image"
-        />
-        <a
-            href="https://rustaway.itch.io/the-fantastical-cookbook"
-            style="text-decoration:none"
-            class="text_child"
-            target="_blank"
-        >
-            The Fantastical Cookbook
-        </a>
-        <p class="text_child">Cook fantastical food for friends</p>
+    <div class="w-full flex flex-wrap justify-center gap-10 px-[5%]">
+        {#each data.games as game, index}
+            <Card gameData="{game}" isNewest="{index == 0}"></Card>
+        {/each}
     </div>
 </div>
 
