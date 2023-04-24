@@ -1,18 +1,9 @@
-<script>
-    function handleClick() {
-        window.open("https://rustaway.itch.io/the-fantastical-cookbook");
-    }
-    function handleMouseEnter() {}
-    function handleMouseOut() {}
-</script>
-
 <div class="parent">
     <div class="parent child">
         <img
             src="fantastical_cookbook.GIF"
             alt="goblin standing behind bar with food to the left"
             class="child game_image"
-            on:click={handleClick}
         />
         <a
             href="https://rustaway.itch.io/the-fantastical-cookbook"
@@ -22,7 +13,6 @@
         >
             The Fantastical Cookbook
         </a>
-        <!-- <h2 class="text_child" cursor="pointer">The Fantastical Cookbook</h2> -->
         <p class="text_child">Cook fantastical food for friends</p>
     </div>
 </div>
@@ -48,8 +38,5 @@
         height: 300px;
         border-radius: 4px;
         cursor: pointer;
-    }
-    ul#menu li {
-        display: inline;
     }
 </style>
