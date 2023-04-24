@@ -1,16 +1,18 @@
 <script>
     import Card from '../../lib/Card.svelte';
+    import SvelteMarkdown from 'svelte-markdown';
+    import CodeRenderer from '../../renderers/Code.svelte';
+    import HeadingRender from '../../renderers/Heading.svelte';
 
     export let data;
 </script>
 
-<div class="parent">
-    <div class="w-full flex flex-wrap justify-center gap-10 px-[5%]">
-        {#each data.games as game, index}
-            <Card gameData="{game}" isNewest="{index == 0}"></Card>
-        {/each}
-    </div>
+<div class="w-full flex flex-wrap justify-center gap-10 px-[5%]">
+    {#each data.games as game, index}
+        <Card gameData="{game}" isNewest="{index == 0}"></Card>
+    {/each}
 </div>
+<SvelteMarkdown renderers={{code : CodeRenderer, heading : HeadingRender}} source = {""}></SvelteMarkdown>
 
 <style>
     .parent {

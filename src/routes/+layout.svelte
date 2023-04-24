@@ -37,7 +37,7 @@
 <a href="/games">
 	<div class="flex place-content-center">
 		<img
-			src="branding/text_clear_tsl_gun.png"
+			src="/branding/text_clear_tsl_gun.png"
 			alt="two shots later logo"
 			width="225"
 			height="225"
