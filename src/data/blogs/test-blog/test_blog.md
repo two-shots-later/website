@@ -1,4 +1,24 @@
-# The Blog To Rule Them all
+# Heading 1
+
+## Heading 2
+
+### Heading 3
+
+#### Heading 4
+
+##### Heading 5
+
+###### Heading 6
+
+This is some test code: 
+
+```rust
+pub fn test() -> i32 {
+    
+}
+```
+
+![card](https://cards.scryfall.io/large/front/1/f/1feb13d0-1a62-4acd-9267-3b2df4b6a199.jpg?1562701835)
 
 In the past couple of months we made this website.
 

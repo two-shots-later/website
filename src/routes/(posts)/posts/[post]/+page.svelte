@@ -1,9 +1,6 @@
 <script>
-    import SvelteMarkdown from "svelte-markdown";
-    import HeadingRenderer from "../../../../renderers/Heading.svelte";
-    import CodeRenderer from "../../../../renderers/Code.svelte";
-    import 'highlight.js/styles/base16/monokai.css';
-  import { readable } from "svelte/store";
+    import Markdown from '../../../../lib/Markdown.svelte';
+
     export let data;
 
     function ordinal_suffix_of(i) {
@@ -27,29 +24,34 @@
 </script>
 
 <!-- Hero Content -->
-<div 
-    role="img" 
-    aria-label="The hero image for {data.blog_meta.blog_name}"
-    style="background-image: url('{data.blog_meta.header_image}');" 
-    class="w-full h-[600px] bg-cover bg-center flex justify-center mb-10">
-    <div class="p-2 flex flex-col justify-center">
-        <div class="bg-black/25 p-2 max-w-[60vw]">
-            <h1 class="text-7xl text-white text-center my-3">{data.blog_meta.title}</h1>
-            <div class="flex justify-center">
-                <p class="text-white">Brooks Palin | {readable_date}</p>
-            </div>
+<div class="w-full px-6 pt-6">
+    <div 
+        role="img" 
+        aria-label="The hero image for {data.blog_meta.blog_name}"
+        style="background-image: url('{data.blog_meta.header_image}');" 
+        class="w-full h-[600px] bg-cover bg-center flex justify-center mb-10 rounded-md shadow-2xl shadow-fiery-orange aura">
+    </div>
+</div>
+
+<div class="flex justify-between mb-10 mx-6">
+    <h1 class="text-7xl dark:text-[#D8D8D8] text-[#2D2F31] font-titillium mb-3">{data.blog_meta.title}</h1>
+    <div class="bg-black/25 p-2 max-w-[60vw]">
+        <div class="flex flex-col justify-center gap-2">
+            <p class="dark:text-[#D8D8D8] text-[#2D2F31] text-2xl font-titillium text-center">{data.blog_meta.author}</p>
+            <hr class="dark:text-[#D8D8D8] text-[#2D2F31]">
+            <p class="dark:text-[#D8D8D8] text-[#2D2F31] text-xl font-titillium text-center">{readable_date}</p>
         </div>
     </div>
 </div>
 
 <!-- Content -->
-<div class="w-[600px] m-auto">
-    <SvelteMarkdown renderers={{code : CodeRenderer, heading : HeadingRenderer}} source="{data.blog_content}"></SvelteMarkdown>
+<div class="w-[900px] mx-8">
+    <Markdown source="{data.blog_content}"></Markdown>
 </div>
 
 
 <style scoped>
-    p {
-        font-size: x-large;
+    .aura {
+        box-shadow: 0px 50px 150px 75px rgba(177, 69, 21, 0.25);
     }
 </style>

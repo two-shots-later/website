@@ -69,14 +69,15 @@ module.exports =  {
     },
     extend: {
      colors: {
-        feiryOrange: '#b14515',
+        'fiery-orange': '#b14515',
         mocha: '#77311a',
         espresso: '#5a2416',
         mountainMist: '#8c8b8e',
         edward: '#a2aba9',
       },
       fontFamily: {
-        'poppins': ['Poppins', 'sans-serif']
+        'poppins': ['Poppins', 'sans-serif'],
+        'titillium' : ['Titillium Web', 'sans-serif']
       }
     },
   },

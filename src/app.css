@@ -2,20 +2,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@config "../tailwind.config.js"
+@config "../tailwind.config.js";
 
-body {
-  background-color: #ffffff;
+@media (prefers-color-scheme: dark) {
+  body {
+      background-color: #2D2F31;
+  }
 }
 
-h1 {
-  font-family: "Poppins", "Arial";
-}
-
-h2 {
-  font-family: "Poppins", "Arial";
-}
-
-p {
-  font-family: "Poppins", "Arial";
+@media (prefers-color-scheme: light) {
+  body {
+      background-color: #D8D8D8;
+  }
 }

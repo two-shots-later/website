@@ -5,63 +5,55 @@
 // NAV BAR SCRIPT STUFF
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 	import {page} from '$app/stores';
-	export let black = "text-black";
-	export let selectedOrange = "text-orange-700";
 
-	export let navGamesColor;
-	export let navAboutColor;
-	export let navBlogColor;
-	export let navContactColor;
-	export const urls = new Map([["/games", "text-black"], ["/about", "text-black"], ["/blog", "text-black"], ["/contact", "text-black"]])
+	let headerClasses = "font-titillium text-3xl";
+	let navGamesClasses = '';
+	let navBlogClasses = '';
+	let navAboutClasses = '';
 
 	$: {
-		let currentPath = $page.url.pathname
-		
-		urls.forEach(function(_color, url) {
-			if (currentPath.startsWith(url)) {
-				urls.set(url, selectedOrange)
-			} else {
-				urls.set(url, black)
-			}
-		})
+		let currentPath = $page.url.pathname;
 
-		navGamesColor = urls.get("/games")
-		navAboutColor = urls.get("/about")
-		navBlogColor = urls.get("/blog")
-		navContactColor = urls.get("/contact")
+		navGamesClasses = currentPath.startsWith('/games') ? 'text-fiery-orange' : 'text-[#2D2F31] dark:text-[#D8D8D8] hover:text-fiery-orange'
+		navBlogClasses = currentPath.startsWith('/blog') ? 'text-fiery-orange' : 'text-[#2D2F31] dark:text-[#D8D8D8] hover:text-fiery-orange'
+		navAboutClasses = currentPath.startsWith('/about') ? 'text-fiery-orange' : 'text-[#2D2F31] dark:text-[#D8D8D8] hover:text-fiery-orange'
 	}
+
+	console.log(navGamesClasses)
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 </script>
 
 <!-- logo and navigation bar, applied to every page -->
 <a href="/games">
-	<div class="flex place-content-center">
+	<div class="flex place-content-center ">
 		<img
-			src="/branding/text_clear_tsl_gun.png"
+			src="/branding/transparent_light_text_tsl_gun.png"
 			alt="two shots later logo"
-			width="225"
-			height="225"
-			class="child mt-6"
+			width="500"
+			height="500"
+			class="mt-6 hidden dark:block"
+		/>
+		<img
+			src="/branding/transparent_dark_text_tsl_gun.png"
+			alt="two shots later logo"
+			width="500"
+			height="500"
+			class="mt-6 dark:hidden"
 		/>
 	</div>
 </a>
 
-<div class="flex place-content-center my-5">
-	<ul>
-		<li class="mr-6 inline">
-			<a href="/games" class="color: {navGamesColor} hover:text-orange-500">Games</a>
-		</li>
-		<li class="mr-6 inline">
-			<a href="/about" class="color: {navAboutColor} hover:text-orange-500">About</a>
-		</li>
-		<li class="mr-6 inline">
-			<a href="/blog" class="color: {navBlogColor} hover:text-orange-500">Blog</a>
-		</li>
-		<li class="mr-6 inline">
-			<a href="/contact" class="color: {navContactColor} hover:text-orange-500">Contact</a>
-		</li>
-	</ul>
+<div class="flex place-content-center my-8 gap-10">
+	<a href="/games" class="{navGamesClasses} {headerClasses}">Games</a>
+	<a href="/blog" class="{headerClasses} {navBlogClasses}">Dev Logs</a>
+	<a href="/about" class="{headerClasses} {navAboutClasses}">About</a>
 </div>
+
+<style scoped>
+	.aura {
+		box-shadow: 0px 0px 250px 13px rgba(177, 69, 21, 0.25);
+	}
+  </style>
 
 <main>
 	<slot />

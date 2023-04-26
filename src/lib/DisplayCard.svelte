@@ -28,7 +28,7 @@
 </script>
 
 {#if back_image !== ""}
-<div role="button" class="flip-button" on:click={flip} on:keyup><i class="fa-solid fa-rotate"></i></div>
+    <div role="button" class="flip-button" on:click={flip} on:keyup><i class="fa-solid fa-rotate"></i></div>
 {/if}
 
 <div class="card" bind:this={card_element} data-tilt data-tilt-scale="1.1" style="{"--rotation : " + (flipped ? "180deg" : "0deg")}">
