@@ -5,23 +5,21 @@
 // NAV BAR SCRIPT STUFF
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 	import {page} from '$app/stores';
-	export let black = "text-black";
-	export let selectedOrange = "text-orange-700";
 
 	export let navGamesColor;
 	export let navAboutColor;
 	export let navBlogColor;
 	export let navContactColor;
-	export const urls = new Map([["/games", "text-black"], ["/about", "text-black"], ["/blog", "text-black"], ["/contact", "text-black"]])
+	export const urls = new Map([["/games", ""], ["/blog", ""], ["/about", ""]])
 
 	$: {
 		let currentPath = $page.url.pathname
 		
 		urls.forEach(function(_color, url) {
 			if (currentPath.startsWith(url)) {
-				urls.set(url, selectedOrange)
+				urls.set(url, "text-feiryOrange")
 			} else {
-				urls.set(url, black)
+				urls.set(url, "text-espresso")
 			}
 		})
 
@@ -37,7 +35,7 @@
 <a href="/games">
 	<div class="flex place-content-center">
 		<img
-			src="branding/text_clear_tsl_gun.png"
+			src="branding/transparent_dark_text_tsl_gun.png"
 			alt="two shots later logo"
 			width="225"
 			height="225"
@@ -49,16 +47,13 @@
 <div class="flex place-content-center my-5">
 	<ul>
 		<li class="mr-6 inline">
-			<a href="/games" class="color: {navGamesColor} hover:text-orange-500">Games</a>
+			<a href="/games" class="color: {navGamesColor} hover:text-feiryOrange text-2xl">Games</a>
 		</li>
 		<li class="mr-6 inline">
-			<a href="/about" class="color: {navAboutColor} hover:text-orange-500">About</a>
+			<a href="/blog" class="color: {navBlogColor} hover:text-feiryOrange text-2xl">Blog</a>
 		</li>
 		<li class="mr-6 inline">
-			<a href="/blog" class="color: {navBlogColor} hover:text-orange-500">Blog</a>
-		</li>
-		<li class="mr-6 inline">
-			<a href="/contact" class="color: {navContactColor} hover:text-orange-500">Contact</a>
+			<a href="/about" class="color: {navAboutColor} hover:text-feiryOrange text-2xl">About</a>
 		</li>
 	</ul>
 </div>
