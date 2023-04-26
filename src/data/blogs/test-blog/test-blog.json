@@ -1,0 +1,9 @@
+{
+  "title": "This Blog Post is definitely not meta.",
+  "desc": "A Blog post that discusses... well this blog site. Not original but required.",
+  "image" : "/hero_image.jpeg",
+  "link" : "/posts/test-blog",
+  "header_image" : "/hero_image.jpeg",
+  "author" : "Brooks Palin",
+  "publish_date" : "2023-04-27T12:00:00+0000"
+}

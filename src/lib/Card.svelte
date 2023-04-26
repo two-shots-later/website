@@ -16,7 +16,7 @@
         style="background-image: url('{gameData.image}');" 
         class="w-[300px] h-[300px] bg-contain bg-center">
       </div>
-      <h1 class="font-poppins text-lg font-bold">{gameData.title}</h1>
+      <h1 class="font-poppins text-lg font-bold w-[300px] line-clamp-2">{gameData.title}</h1>
       <p class="text-sm line-clamp-2 w-[300px]">{gameData.desc}</p>
     </div>
   </div>

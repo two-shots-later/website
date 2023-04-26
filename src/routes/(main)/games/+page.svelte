@@ -1,8 +1,8 @@
 <script>
-    import Card from '../../lib/Card.svelte';
+    import Card from '../../../lib/Card.svelte';
     import SvelteMarkdown from 'svelte-markdown';
-    import CodeRenderer from '../../renderers/Code.svelte';
-    import HeadingRender from '../../renderers/Heading.svelte';
+    import CodeRenderer from '../../../renderers/Code.svelte';
+    import HeadingRender from '../../../renderers/Heading.svelte';
 
     export let data;
 </script>
