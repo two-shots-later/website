@@ -1,0 +1,1 @@
+<p class="text-[#2D2F31] dark:text-[#D8D8D8] font-titillium text-2xl my-6 leading-relaxed font-light"><slot></slot></p>
