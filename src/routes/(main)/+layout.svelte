@@ -14,9 +14,9 @@
 	$: {
 		let currentPath = $page.url.pathname;
 
-		navGamesClasses = currentPath.startsWith('/games') ? 'text-fiery-orange' : 'text-[#2D2F31] dark:text-[#D8D8D8] hover:text-fiery-orange'
-		navBlogClasses = currentPath.startsWith('/blog') ? 'text-fiery-orange' : 'text-[#2D2F31] dark:text-[#D8D8D8] hover:text-fiery-orange'
-		navAboutClasses = currentPath.startsWith('/about') ? 'text-fiery-orange' : 'text-[#2D2F31] dark:text-[#D8D8D8] hover:text-fiery-orange'
+		navGamesClasses = currentPath.startsWith('/games') ? 'text-fiery-orange' : 'text-logger dark:text-silverDollar hover:text-fiery-orange'
+		navBlogClasses = currentPath.startsWith('/blog') ? 'text-fiery-orange' : 'text-logger dark:text-silverDollar hover:text-fiery-orange'
+		navAboutClasses = currentPath.startsWith('/about') ? 'text-fiery-orange' : 'text-logger dark:text-silverDollar hover:text-fiery-orange'
 	}
 
 	console.log(navGamesClasses)
@@ -27,18 +27,11 @@
 <a href="/games">
 	<div class="flex place-content-center ">
 		<img
-			src="/branding/transparent_light_text_tsl_gun.png"
+			src="branding/tsl_logo.png"
 			alt="two shots later logo"
-			width="500"
-			height="500"
-			class="mt-6 hidden dark:block"
-		/>
-		<img
-			src="/branding/transparent_dark_text_tsl_gun.png"
-			alt="two shots later logo"
-			width="500"
-			height="500"
-			class="mt-6 dark:hidden"
+			width="450"
+			height="450"
+			class="mt-6"
 		/>
 	</div>
 </a>

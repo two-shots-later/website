@@ -71,12 +71,13 @@ module.exports =  {
      colors: {
         'fiery-orange': '#b14515',
         mocha: '#77311a',
+        logger: '#2D2F31',
         espresso: '#5a2416',
+        silverDollar : '#D8D8D8',
         mountainMist: '#8c8b8e',
         edward: '#a2aba9',
       },
       fontFamily: {
-        'poppins': ['Poppins', 'sans-serif'],
         'titillium' : ['Titillium Web', 'sans-serif']
       }
     },
