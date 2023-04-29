@@ -12,17 +12,17 @@
   </script>
   
   {#if depth === 1}
-    <h1 {id} class="header text-6xl text-[#2D2F31] dark:text-[#D8D8D8] my-7 text font-titillium"><slot></slot></h1>
+    <h1 {id} class="header text-6xl text-logger dark:text-silver-dollar my-7 text font-titillium"><slot></slot></h1>
   {:else if depth === 2}
-    <h2 {id} class="header text-5xl text-[#2D2F31] dark:text-[#D8D8D8] my-6 text font-titillium"><slot></slot></h2>
+    <h2 {id} class="header text-5xl text-logger dark:text-silver-dollar my-6 text font-titillium"><slot></slot></h2>
   {:else if depth === 3}
-    <h3 {id} class="header text-4xl text-[#2D2F31] dark:text-[#D8D8D8] my-6 text font-titillium"><slot></slot></h3>
+    <h3 {id} class="header text-4xl text-logger dark:text-silver-dollar my-6 text font-titillium"><slot></slot></h3>
   {:else if depth === 4}
-    <h4 {id} class="header text-3xl text-[#2D2F31] dark:text-[#D8D8D8] my-6 text font-titillium"><slot></slot></h4>
+    <h4 {id} class="header text-3xl text-logger dark:text-silver-dollar my-6 text font-titillium"><slot></slot></h4>
   {:else if depth === 5}
-    <h5 {id} class="header text-2xl text-[#2D2F31] dark:text-[#D8D8D8] my-6 text font-titillium"><slot></slot></h5>
+    <h5 {id} class="header text-2xl text-logger dark:text-silver-dollar my-6 text font-titillium"><slot></slot></h5>
   {:else if depth === 6}
-    <h6 {id} class="header text-xl text-[#2D2F31] dark:text-[#D8D8D8] my-4 text font-titillium"><slot></slot></h6>
+    <h6 {id} class="header text-xl text-logger dark:text-silver-dollar my-4 text font-titillium"><slot></slot></h6>
   {:else}
     {raw}
   {/if}
