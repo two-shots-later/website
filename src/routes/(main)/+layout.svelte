@@ -14,9 +14,9 @@
 	$: {
 		let currentPath = $page.url.pathname;
 
-		navGamesClasses = currentPath.startsWith('/games') ? 'text-fiery-orange' : 'text-logger dark:text-silverDollar hover:text-fiery-orange'
-		navBlogClasses = currentPath.startsWith('/blog') ? 'text-fiery-orange' : 'text-logger dark:text-silverDollar hover:text-fiery-orange'
-		navAboutClasses = currentPath.startsWith('/about') ? 'text-fiery-orange' : 'text-logger dark:text-silverDollar hover:text-fiery-orange'
+		navGamesClasses = currentPath.startsWith('/games') ? 'text-fiery-orange' : 'text-logger dark:text-silver-dollar hover:text-fiery-orange'
+		navBlogClasses = currentPath.startsWith('/blog') ? 'text-fiery-orange' : 'text-logger dark:text-silver-dollar hover:text-fiery-orange'
+		navAboutClasses = currentPath.startsWith('/about') ? 'text-fiery-orange' : 'text-logger dark:text-silver-dollar hover:text-fiery-orange'
 	}
 
 	console.log(navGamesClasses)

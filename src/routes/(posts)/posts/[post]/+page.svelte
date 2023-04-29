@@ -34,12 +34,12 @@
 </div>
 
 <div class="flex justify-between mb-10 mx-6">
-    <h1 class="text-7xl dark:text-silverDollar text-logger font-titillium mb-3">{data.blog_meta.title}</h1>
+    <h1 class="text-7xl dark:text-silver-dollar text-logger font-titillium mb-3">{data.blog_meta.title}</h1>
     <div class="bg-black/25 p-2 max-w-[60vw]">
         <div class="flex flex-col justify-center gap-2">
-            <p class="dark:text-silverDollar text-logger text-2xl font-titillium text-center">{data.blog_meta.author}</p>
-            <hr class="dark:text-silverDollar text-logger">
-            <p class="dark:text-silverDollar text-logger text-xl font-titillium text-center">{readable_date}</p>
+            <p class="dark:text-silver-dollar text-logger text-2xl font-titillium text-center">{data.blog_meta.author}</p>
+            <hr class="dark:text-silver-dollar text-logger">
+            <p class="dark:text-silver-dollar text-logger text-xl font-titillium text-center">{readable_date}</p>
         </div>
     </div>
 </div>

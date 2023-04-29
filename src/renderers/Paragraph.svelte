@@ -1,1 +1,1 @@
-<p class="text-logger dark:text-silverDollar font-titillium text-2xl my-6 leading-relaxed font-light"><slot></slot></p>
+<p class="text-logger dark:text-silver-dollar font-titillium text-2xl my-6 leading-relaxed font-light"><slot></slot></p>
