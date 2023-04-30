@@ -3,6 +3,10 @@
 @tailwind utilities;
 @config "../tailwind.config.js";
 
+html {
+  scroll-behavior: smooth;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
       background-color: #2D2F31;

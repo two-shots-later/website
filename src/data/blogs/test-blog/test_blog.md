@@ -10,6 +10,8 @@
 
 ###### Heading 6
 
+# This is the start of the blog
+
 This is some test code: 
 
 ```rust
@@ -18,7 +20,7 @@ pub fn test() -> i32 {
 }
 ```
 
-![card](https://cards.scryfall.io/large/front/1/f/1feb13d0-1a62-4acd-9267-3b2df4b6a199.jpg?1562701835)
+![card](https://cards.scryfall.io/large/front/1/f/1feb13d0-1a62-4acd-9267-3b2df4b6a199.jpg?1562701835|https://cards.scryfall.io/large/front/4/4/4404fc9c-ef02-479c-9638-0cc163f0b48f.jpg?1626096359|https://cards.scryfall.io/large/front/b/f/bffa36ac-137d-481c-b1b7-76a88ef15d54.jpg?1651655118)
 
 In the past couple of months we made this website.
 

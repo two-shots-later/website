@@ -5,8 +5,7 @@
   export let title = undefined
   export let text = ''
 
-  $: card_names = card_names
-  $: cards = cards
+  $: card_links = href.split("|")
 </script>
 
 {#if text === "video"}
@@ -14,8 +13,12 @@
     <iframe width="100%" height="100%" src="{href.replace("watch?v=", "embed/")}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
 {:else if text === "card"}
-  <div class="w-[250px] h-[350px]">
-    <DisplayCard front_image={href}></DisplayCard>
+  <div class="flex justify-center gap-6 flex-wrap">
+    {#each card_links as card_link}
+      <div class="w-[250px] h-[350px] md:w-[284px] md:h-[397px]">
+        <DisplayCard front_image={card_link.trim()}></DisplayCard>
+      </div>
+    {/each}
   </div>
   <!-- {:else if text === "mtg"}
   <div class="card-flex">
