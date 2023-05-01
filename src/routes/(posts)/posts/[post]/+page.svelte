@@ -41,14 +41,7 @@
 
     <!-- Content -->
     <div class="flex flex-col justify-center mx-6 xl:mx-auto flex-nowrap max-w-[1200px]">
-        <div class="flex justify-between">
-            <h1 class="text-7xl dark:text-silver-dollar text-logger font-titillium mb-3 text-center">{data.blog_meta.title}</h1>
-            <!-- <div class="flex flex-col justify-center gap-2 hidden lg:block">
-                <p class="dark:text-silver-dollar text-logger text-2xl font-titillium text-center">{data.blog_meta.author}</p>
-                <hr class="dark:text-silver-dollar text-logger">
-                <p class="dark:text-silver-dollar text-logger text-xl font-titillium text-center">{readable_date}</p>
-            </div> -->
-        </div>
+        <h1 class="text-7xl dark:text-silver-dollar text-logger font-titillium mb-3 text-center">{data.blog_meta.title}</h1>
         <p class="dark:text-silver-dollar text-logger text-2xl font-titillium text-center">{data.blog_meta.author} | {readable_date}</p>
         <hr class="my-6 text-logger dark:text-silver-dollar">
         <div class="flex justify-between">
