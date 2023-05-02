@@ -4,7 +4,7 @@
 </script>
 
 
-<div class="flex flex-col gap-12 h-[100vh] justify-center">
+<div class="flex flex-col gap-24 h-[100vh] justify-center">
     <a href="/games">
 		<div class="flex place-content-center ">
 			<img
@@ -21,4 +21,9 @@
             <span class="text-fiery-orange">Oops!</span> {$page.error.message}.
         </h1>
     </div>
+    <a href="/games">
+        <p class="text-center font-titillium text-3xl text-logger dark:text-silver-dollar hover:text-fiery-orange mt-6">
+            Back to site
+        </p>
+    </a>
 </div>
