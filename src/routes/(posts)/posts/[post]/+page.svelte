@@ -1,7 +1,5 @@
 <script>
-    import { onMount } from 'svelte';
     import Markdown from '../../../../lib/Markdown.svelte';
-    import { children, each } from 'svelte/internal';
     import NavList from '../../../../lib/NavList.svelte';
 
     export let data;
@@ -54,9 +52,6 @@
         </div>
     </div>
 </div>
-
-
-
 
 <style scoped>
     .aura {

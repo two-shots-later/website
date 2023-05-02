@@ -40,9 +40,7 @@ export async function load({ params, route }) {
     let publish_date = new Date(blog_meta.publish_date)
     
     if(now < publish_date) {
-        throw error(404, {
-            message: "Post not found."
-        })
+        throw ERROR_404
     }
 
     return {

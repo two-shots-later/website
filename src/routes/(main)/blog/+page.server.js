@@ -9,9 +9,18 @@ export async function load({ params }) {
 
     for (const path in blog_meta) {
         await blog_meta[path]().then((mod) => {
-            meta.push(JSON.parse(mod))
+            let meta_data = JSON.parse(mod);
+            const now = new Date();
+            let publish_date = new Date(meta_data.publish_date);
+            if (now > publish_date) {
+                meta.push(meta_data)
+            }
         })
     }
+
+    meta.sort(function(a, b) {
+        return (a.publish_date < b.publish_date) ? 1 : ((a.publish_date > b.publish_date) ? -1 : 0);
+    });
 
     return {
         meta,
